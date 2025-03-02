@@ -8,7 +8,7 @@ import InputField from "../../../components/common/fields/InputField";
 import SelectField from "../../../components/common/fields/SelectField";
 import { educationOptions } from "../../../utils/select-options";
 import TextareaField from "../../../components/common/fields/TextAreaField";
-
+//убрать потом
 const FormSchema = z.object({
   name: z.string(),
   employer_company: z.string(),

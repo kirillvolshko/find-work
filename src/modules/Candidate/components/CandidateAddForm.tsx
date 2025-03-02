@@ -8,6 +8,7 @@ import { DateField } from "../../../components/common/fields/DateField";
 import SelectField from "../../../components/common/fields/SelectField";
 import { educationOptions, genderOptions } from "../../../utils/select-options";
 
+//убрать потом
 const FormSchema = z.object({
   fullName: z.string(),
   profession: z.string(),
