@@ -4,7 +4,7 @@ import { ListViewHirer } from "./components/ListViewHirer";
 
 export const Hirer = () => {
   return (
-    <div className="flex flex-row gap-5 w-full h-full">
+    <div className="flex flex-col md:flex-row gap-5 w-full h-full">
       <ListViewHirer data={vacancies} />
       <HirerAddForm />
     </div>

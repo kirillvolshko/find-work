@@ -36,7 +36,7 @@ export const CandidateAddForm = () => {
           onSubmit={form.handleSubmit(onSubmit)}
           className="flex flex-col h-full"
         >
-          <div className="flex flex-row gap-4">
+          <div className="flex flex-col md:flex-row gap-4">
             <div className="flex flex-col gap-4 w-full">
               <InputField
                 control={form.control}
@@ -44,7 +44,7 @@ export const CandidateAddForm = () => {
                 label="ПІБ"
                 placeholder="Введить ім'я та прізвище"
               />
-              <div className="flex justify-between w-full">
+              <div className="flex flex-col gap-4 md:gap-0 md:flex-row md:justify-between w-full">
                 <DateField
                   control={form.control}
                   name="birthdayDate"
@@ -94,7 +94,7 @@ export const CandidateAddForm = () => {
               />
             </div>
           </div>
-          <div className="flex justify-end">
+          <div className="flex justify-end pt-5">
             <Button type="submit" className="">
               Зберегти
             </Button>

@@ -3,14 +3,14 @@ import { IHirer } from "../../../types/hirer";
 
 export const HirerItem = ({ item }: { item: IHirer }) => {
   return (
-    <div className="relative p-2 text-white bg-secondBackground border border-white/10 rounded-[4px] mr-1">
+    <div className="relative  p-2 text-white bg-secondBackground border border-white/10 rounded-[4px] mr-1">
       <span>
-        <h1 className="font-semibold">Вакансія {item.name}</h1>
+        <h1 className="font-semibold pt-5">Вакансія {item.name}</h1>
       </span>
       <span className="pt-2">
         <p>{item.salary} грн</p>
       </span>
-      <div className="flex gap-4 pt-2">
+      <div className="flex flex-col md:flex-row gap-4 pt-2">
         <p className="flex gap-1">
           <Building2 className="text-primary" size={20} />
           {item.employer_company}
