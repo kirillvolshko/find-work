@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+}
+
+:root {
+  --tw-ring-color: 174, 53%, 67%;
+  --gray: 0, 0%, 33%;
+  --gray-2: 0, 0%, 27%;
+  --primary: 174, 53%, 67%;
+  --main-background: 207, 15%, 20%;
+  --second-background: 210, 17%, 9%;
+}
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--gray));
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--gray-2));
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+.rdp-dropdown_month,
+.rdp-dropdown_year {
+  display: flex !important;
+  align-items: center;
+  gap: 3px;
+}
+.rdp-dropdown_month svg,
+.rdp-dropdown_year svg {
+  display: unset !important;
+  vertical-align: baseline !important;
+}
+.rdp-caption_dropdowns {
+  gap: 5px;
+}
+.rdp-dropdown {
+  background-color: hsl(var(--second-background)) !important;
+  min-width: 100px;
+  padding: 4px !important;
+}
