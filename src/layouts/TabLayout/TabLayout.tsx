@@ -30,7 +30,7 @@ export const TabLayout = (data: TabLayoutProps) => {
         <TabsContent
           value={item.title}
           key={item.title}
-          className="bg-mainBackground/20 rounded-[30px] p-[30px] h-full min-h-[calc(100vh-110px)]"
+          className="bg-mainBackground/20 rounded-[31px] p-[30px] h-full min-h-[calc(100vh-110px)]"
         >
           {item.content}
         </TabsContent>
